@@ -1,0 +1,2663 @@
+:root{
+  --green:#82bd3a;--green-dark:#5e9427;--ink:#061923;--ink-2:#0a2431;--cream:#f5f3ea;--muted:#9cafb4;--line:rgba(255,255,255,.12);--card:rgba(255,255,255,.07);--shadow:0 24px 80px rgba(0,0,0,.32);--radius:28px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .35s,color .35s}.theme-dark{--bg:#061923;--bg2:#0a2431;--text:#f8fbf4;--soft:#b8c7ca;--panel:rgba(255,255,255,.075);--panel2:rgba(130,189,58,.13);--border:rgba(255,255,255,.13);--nav:rgba(6,25,35,.76)}.theme-light{--bg:#f5f3ea;--bg2:#ffffff;--text:#061923;--soft:#53676d;--panel:rgba(255,255,255,.78);--panel2:rgba(130,189,58,.16);--border:rgba(6,25,35,.12);--nav:rgba(245,243,234,.8)}a{color:inherit;text-decoration:none}.container{width:min(1180px,calc(100% - 40px));margin:auto}.grain{position:fixed;inset:0;pointer-events:none;opacity:.14;background:radial-gradient(circle at 20% 20%,rgba(130,189,58,.22),transparent 30%),radial-gradient(circle at 90% 10%,rgba(255,255,255,.1),transparent 25%),radial-gradient(circle at 70% 80%,rgba(130,189,58,.12),transparent 30%);z-index:-2}.site-header{position:fixed;top:0;width:100%;z-index:20;background:var(--nav);backdrop-filter:blur(18px);border-bottom:1px solid var(--border)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center}.logo{width:185px;height:auto;display:block}.logo-light,.mini-light{display:none}.theme-light .logo-light,.theme-light .mini-light{display:block}.theme-light .logo-dark,.theme-light .mini-dark{display:none}.nav-links{display:flex;align-items:center;gap:26px;font-weight:700;font-size:14px}.nav-links>a{opacity:.82;position:relative}.nav-links>a:after{content:"";position:absolute;left:0;bottom:-9px;width:0;height:2px;background:var(--green);transition:.25s}.nav-links>a:hover:after{width:100%}.language-menu{position:relative}.language-button{display:flex;gap:8px;align-items:center;border:1px solid var(--border);background:var(--panel);color:var(--text);padding:11px 13px;border-radius:999px;cursor:pointer;font-weight:800}.language-options{position:absolute;right:0;top:52px;min-width:185px;padding:8px;border:1px solid var(--border);border-radius:18px;background:var(--bg2);box-shadow:var(--shadow);opacity:0;transform:translateY(8px);pointer-events:none;transition:.2s}.language-menu.open .language-options{opacity:1;transform:none;pointer-events:auto}.language-options button{width:100%;border:0;background:transparent;color:var(--text);padding:11px;border-radius:12px;text-align:left;cursor:pointer;font-weight:700}.language-options button:hover{background:var(--panel2)}.nav-toggle{display:none;background:transparent;border:0}.nav-toggle span{display:block;width:25px;height:2px;background:var(--text);margin:6px}.section{padding:120px 0}.hero{min-height:100vh;padding-top:140px;display:flex;align-items:center}.hero-grid,.section-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.eyebrow{color:var(--green);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:900}.hero h1,.section-heading h2{font-size:clamp(42px,6vw,78px);line-height:.95;margin:12px 0 20px;letter-spacing:-.06em}.section-heading h2{font-size:clamp(32px,4.5vw,58px)}.hero-text,.section-heading p,.mission-panel>p,.contact p{font-size:18px;line-height:1.75;color:var(--soft)}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:15px 22px;font-weight:900;border:1px solid var(--border);transition:.25s}.btn:hover{transform:translateY(-3px)}.btn-primary{background:linear-gradient(135deg,var(--green),#a6db67);color:#061923;border:0;box-shadow:0 14px 40px rgba(130,189,58,.25)}.btn-ghost{background:var(--panel)}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.metrics{display:flex;gap:14px;margin-top:34px}.metrics div{background:var(--panel);border:1px solid var(--border);padding:18px;border-radius:20px;min-width:130px}.metrics strong{font-size:26px;display:block}.metrics span{color:var(--soft);font-size:13px}.hero-logo-stage{min-height:520px;position:relative;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle,rgba(130,189,58,.2),transparent 58%)}.mini-logo{width:min(310px,60vw);filter:drop-shadow(0 30px 60px rgba(0,0,0,.35));animation:float 5s ease-in-out infinite}.orbit{position:absolute;border:1px solid var(--border);border-radius:50%;animation:spin 18s linear infinite}.orbit-one{width:390px;height:390px}.orbit-two{width:280px;height:280px;animation-direction:reverse}.tax-card{position:absolute;background:var(--panel);border:1px solid var(--border);backdrop-filter:blur(12px);padding:13px 17px;border-radius:18px;font-weight:900;box-shadow:var(--shadow);animation:float 4s ease-in-out infinite}.card-one{top:90px;left:70px}.card-two{right:60px;top:180px;animation-delay:.8s}.card-three{bottom:110px;left:120px;animation-delay:1.5s}@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-16px)}}.mission{background:linear-gradient(180deg,transparent,rgba(130,189,58,.06),transparent)}.mission-panel,.contact-panel{padding:34px;border:1px solid var(--border);background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow)}.mission-cards{display:grid;gap:16px;margin-top:28px}.mission-cards article{padding:20px;border:1px solid var(--border);border-radius:22px;background:linear-gradient(135deg,var(--panel),transparent)}.mission-cards span{color:var(--green);font-weight:900}.mission-cards h3{margin:8px 0}.mission-cards p{color:var(--soft);line-height:1.6}.centered{text-align:center;max-width:850px;margin:0 auto 58px}.profile-stage{display:grid;grid-template-columns:1fr 1fr;gap:30px;position:relative}.profile-stage:before{content:"";position:absolute;inset:18% 18%;background:radial-gradient(circle,rgba(130,189,58,.18),transparent 65%);filter:blur(10px);z-index:-1}.profile-card{padding:30px;border-radius:30px;border:1px solid var(--border);background:linear-gradient(145deg,var(--panel),rgba(130,189,58,.05));box-shadow:var(--shadow);text-align:center;transition:.25s}.profile-card:hover{transform:translateY(-8px) rotate(.4deg)}.profile-photo{width:150px;height:150px;border-radius:34px;margin:0 auto 18px;background:linear-gradient(135deg,var(--green),var(--ink));display:grid;place-items:center;box-shadow:inset 0 0 0 8px rgba(255,255,255,.08)}.profile-photo span{font-size:42px;font-weight:900;color:white}.profile-card h3{font-size:26px;margin:8px}.role{color:var(--green);font-weight:900}.profile-card a{display:block;color:var(--soft);margin:8px}.profile-card>p:last-child{color:var(--soft);line-height:1.7}.partner-marquee{overflow-x:auto;cursor:grab;scrollbar-width:thin;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}.partner-marquee:active{cursor:grabbing}.partner-track{display:flex;width:max-content;gap:18px;animation:marquee 30s linear infinite;padding:16px 0}.partner-marquee:hover .partner-track{animation-play-state:paused}.partner-track span{min-width:190px;text-align:center;padding:24px 28px;border:1px solid var(--border);background:var(--panel);border-radius:22px;font-size:22px;font-weight:900;letter-spacing:-.04em}.partner-hint{text-align:center;color:var(--soft)}@keyframes marquee{to{transform:translateX(-50%)}}.contact-choice{display:flex;gap:12px;margin-bottom:20px}.choice{flex:1;border:1px solid var(--border);background:transparent;color:var(--text);padding:14px;border-radius:16px;font-weight:900;cursor:pointer}.choice.active{background:var(--green);color:#061923}.contact-view{display:none;animation:pop .35s ease}.contact-view.active{display:block}@keyframes pop{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}.contact-form label{display:block;margin-bottom:15px}.contact-form span{display:block;margin-bottom:8px;font-weight:800}.contact-form input,.contact-form textarea{width:100%;border:1px solid var(--border);background:rgba(255,255,255,.06);color:var(--text);padding:15px;border-radius:16px;font:inherit;outline:none}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--green)}.wa-logo{width:80px;height:80px;border-radius:24px;background:#25d366;color:white;display:grid;place-items:center;font-size:38px}.btn-whatsapp{background:#25d366;color:white;border:0}.floating-actions{position:fixed;right:22px;bottom:22px;display:grid;gap:12px;z-index:25}.float-btn{width:56px;height:56px;border-radius:50%;border:1px solid var(--border);background:var(--panel);color:var(--text);display:grid;place-items:center;font-size:22px;box-shadow:var(--shadow);cursor:pointer;transition:.25s}.theme-light .theme-toggle{background:#061923;color:#fff}.whatsapp-float{background:#25d366;color:white}.footer{border-top:1px solid var(--border);padding:30px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;color:var(--soft)}.footer-logo{width:130px}.reveal{opacity:0;transform:translateY(35px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}.delay-1{transition-delay:.15s}.slide-left{transform:translateX(-70px)}.slide-right{transform:translateX(70px)}[dir="rtl"] .hero-copy,[dir="rtl"] .section-heading,[dir="rtl"] .mission-panel,[dir="rtl"] .contact-panel{text-align:right}
+@media(max-width:850px){.nav-toggle{display:block}.nav-links{position:fixed;top:82px;right:20px;left:20px;display:none;flex-direction:column;align-items:stretch;background:var(--bg2);border:1px solid var(--border);border-radius:24px;padding:20px;box-shadow:var(--shadow)}.nav-links.open{display:flex}.hero-grid,.section-grid,.contact-grid,.profile-stage{grid-template-columns:1fr}.section{padding:90px 0}.hero{padding-top:130px}.hero-logo-stage{min-height:360px}.orbit-one{width:300px;height:300px}.orbit-two{width:210px;height:210px}.tax-card{display:none}.metrics{display:grid;grid-template-columns:1fr 1fr}.footer-inner{display:grid;gap:12px}.logo{width:155px}.hero h1{font-size:44px}}
+
+
+/* Real company logo carousel */
+.partner-marquee,
+.partner-slider,
+.partners-carousel {
+  overflow: hidden;
+}
+
+.partner-track {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+  animation: partner-logo-scroll 34s linear infinite;
+  will-change: transform;
+  cursor: grab;
+  user-select: none;
+}
+
+.partner-track:hover {
+  animation-play-state: paused;
+}
+
+.partner-track:active {
+  cursor: grabbing;
+}
+
+.partner-logo {
+  flex: 0 0 auto;
+  min-width: 180px;
+  height: 96px;
+  padding: 1.1rem 1.5rem;
+  border-radius: 24px;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--card, #ffffff) 76%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border, rgba(255,255,255,.14)) 88%, transparent);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, .16);
+  backdrop-filter: blur(12px);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.partner-logo img {
+  max-width: 145px;
+  max-height: 58px;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: none;
+  opacity: .72;
+  transition: filter .25s ease, opacity .25s ease, transform .25s ease;
+}
+
+.partner-logo:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: color-mix(in srgb, var(--accent, #8fbf9f) 55%, transparent);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, .22);
+}
+
+.partner-logo:hover img {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@keyframes partner-logo-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 700px) {
+  .partner-track {
+    gap: 1rem;
+    animation-duration: 26s;
+  }
+
+  .partner-logo {
+    min-width: 145px;
+    height: 82px;
+    padding: .9rem 1rem;
+    border-radius: 18px;
+  }
+
+  .partner-logo img {
+    max-width: 118px;
+    max-height: 48px;
+  }
+}
+
+/* Company logos: original colors by default */
+.partner-logo img {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+.partner-logo:hover img {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+
+/* Final visual fixes requested */
+
+/* Navbar logo: very subtle breathing/fade effect, never disappearing */
+.brand .logo {
+  animation: fudiciaNavLogoBreath 7.5s ease-in-out infinite;
+  transform-origin: left center;
+  will-change: opacity, filter;
+}
+
+@keyframes fudiciaNavLogoBreath {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 0 rgba(130, 189, 58, 0));
+  }
+  50% {
+    opacity: .86;
+    filter: drop-shadow(0 0 10px rgba(130, 189, 58, .18));
+  }
+}
+
+/* Language selector: replace arrow with a clean 3-bar icon */
+.language-button .chev {
+  width: 15px;
+  height: 12px;
+  display: inline-block;
+  flex: 0 0 15px;
+  font-size: 0;
+  line-height: 0;
+  opacity: .92;
+  background:
+    linear-gradient(currentColor 0 0) 50% 0 / 15px 2px no-repeat,
+    linear-gradient(currentColor 0 0) 50% 5px / 15px 2px no-repeat,
+    linear-gradient(currentColor 0 0) 50% 10px / 15px 2px no-repeat;
+}
+
+/* Make the mobile navbar hamburger completely stationary and easier to click */
+.nav-toggle {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  padding: 0;
+  margin-left: auto;
+  position: relative;
+  place-items: center;
+  cursor: pointer;
+  transform: none !important;
+  animation: none !important;
+}
+
+.nav-toggle span {
+  position: absolute;
+  left: 13px;
+  width: 28px;
+  height: 2px;
+  margin: 0 !important;
+  border-radius: 999px;
+  transform: none !important;
+  transition: background .25s ease;
+}
+
+.nav-toggle span:nth-child(1) { top: 16px; }
+.nav-toggle span:nth-child(2) { top: 25px; }
+.nav-toggle span:nth-child(3) { top: 34px; }
+
+@media (max-width: 850px) {
+  .nav {
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: grid !important;
+  }
+}
+
+/* Profile photo placeholders a little larger */
+.profile-photo {
+  width: 174px !important;
+  height: 174px !important;
+  border-radius: 38px !important;
+}
+
+.profile-photo span {
+  font-size: 48px !important;
+}
+
+@media (max-width: 650px) {
+  .profile-photo {
+    width: 164px !important;
+    height: 164px !important;
+  }
+}
+
+/* Hero floating tax words: orbit around the logo instead of sitting clipped behind it */
+.hero-logo-stage {
+  overflow: visible !important;
+  isolation: isolate;
+}
+
+.mini-logo {
+  position: relative;
+  z-index: 4;
+}
+
+.tax-card {
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 2;
+  white-space: nowrap;
+  opacity: .9;
+  pointer-events: none;
+  animation-timing-function: linear !important;
+  animation-iteration-count: infinite !important;
+}
+
+.card-one {
+  animation-name: fudiciaOrbitOne !important;
+  animation-duration: 22s !important;
+  animation-delay: -2s !important;
+}
+
+.card-two {
+  animation-name: fudiciaOrbitTwo !important;
+  animation-duration: 26s !important;
+  animation-delay: -7s !important;
+}
+
+.card-three {
+  animation-name: fudiciaOrbitThree !important;
+  animation-duration: 30s !important;
+  animation-delay: -13s !important;
+}
+
+@keyframes fudiciaOrbitOne {
+  0%   { transform: translate(-50%, -50%) rotate(-24deg) translateX(235px) rotate(24deg); }
+  100% { transform: translate(-50%, -50%) rotate(336deg) translateX(235px) rotate(-336deg); }
+}
+
+@keyframes fudiciaOrbitTwo {
+  0%   { transform: translate(-50%, -50%) rotate(118deg) translateX(225px) rotate(-118deg); }
+  100% { transform: translate(-50%, -50%) rotate(478deg) translateX(225px) rotate(-478deg); }
+}
+
+@keyframes fudiciaOrbitThree {
+  0%   { transform: translate(-50%, -50%) rotate(226deg) translateX(245px) rotate(-226deg); }
+  100% { transform: translate(-50%, -50%) rotate(586deg) translateX(245px) rotate(-586deg); }
+}
+
+@media (max-width: 850px) {
+  .tax-card {
+    display: block !important;
+    padding: 9px 12px;
+    border-radius: 14px;
+    font-size: 12px;
+    opacity: .88;
+  }
+
+  .card-one {
+    animation-name: fudiciaOrbitOneMobile !important;
+    animation-duration: 20s !important;
+  }
+
+  .card-two {
+    animation-name: fudiciaOrbitTwoMobile !important;
+    animation-duration: 24s !important;
+  }
+
+  .card-three {
+    animation-name: fudiciaOrbitThreeMobile !important;
+    animation-duration: 28s !important;
+  }
+}
+
+@keyframes fudiciaOrbitOneMobile {
+  0%   { transform: translate(-50%, -50%) rotate(-26deg) translateX(150px) rotate(26deg); }
+  100% { transform: translate(-50%, -50%) rotate(334deg) translateX(150px) rotate(-334deg); }
+}
+
+@keyframes fudiciaOrbitTwoMobile {
+  0%   { transform: translate(-50%, -50%) rotate(114deg) translateX(145px) rotate(-114deg); }
+  100% { transform: translate(-50%, -50%) rotate(474deg) translateX(145px) rotate(-474deg); }
+}
+
+@keyframes fudiciaOrbitThreeMobile {
+  0%   { transform: translate(-50%, -50%) rotate(226deg) translateX(158px) rotate(-226deg); }
+  100% { transform: translate(-50%, -50%) rotate(586deg) translateX(158px) rotate(-586deg); }
+}
+
+
+/* Navbar logo sequence animation:
+   LOGO stays normal, fades out after 7s, mini-logo appears,
+   then the full logo reveals from right to left and replaces the mini-logo. */
+.brand-logo-sequence {
+  width: 185px;
+  min-width: 185px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+.nav-logo-stage {
+  position: relative;
+  display: block;
+  width: 185px;
+  height: 54px;
+  overflow: visible;
+}
+
+.brand-logo-sequence .logo,
+.brand-logo-sequence .nav-full-logo {
+  width: 185px;
+  height: auto;
+}
+
+.brand-logo-sequence .logo {
+  animation: none !important;
+}
+
+.brand-logo-sequence .nav-full-logo,
+.brand-logo-sequence .nav-mini-logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  will-change: opacity, clip-path, transform, filter;
+}
+
+.brand-logo-sequence .nav-full-logo {
+  animation: fudiciaFullLogoSequence 12s cubic-bezier(.7, 0, .18, 1) infinite !important;
+  clip-path: inset(0 0 0 0);
+  opacity: 1;
+}
+
+.brand-logo-sequence .nav-mini-logo {
+  width: 40px;
+  height: auto;
+  opacity: 0;
+  pointer-events: none;
+  animation: fudiciaMiniLogoSequence 12s cubic-bezier(.7, 0, .18, 1) infinite;
+  filter: drop-shadow(0 0 12px rgba(130, 189, 58, .2));
+}
+
+.nav-mini-light {
+  display: none;
+}
+
+.theme-light .nav-mini-light {
+  display: block;
+}
+
+.theme-light .nav-mini-dark {
+  display: none;
+}
+
+@keyframes fudiciaFullLogoSequence {
+  0%, 58.33% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    filter: drop-shadow(0 0 0 rgba(130, 189, 58, 0));
+  }
+
+  66.66% {
+    opacity: 0;
+    clip-path: inset(0 0 0 0);
+    filter: drop-shadow(0 0 20px rgba(130, 189, 58, .22));
+  }
+
+  67.5% {
+    opacity: 1;
+    clip-path: inset(0 0 0 100%);
+  }
+
+  76% {
+    opacity: 1;
+    clip-path: inset(0 0 0 72%);
+  }
+
+  86% {
+    opacity: 1;
+    clip-path: inset(0 0 0 38%);
+  }
+
+  94% {
+    opacity: 1;
+    clip-path: inset(0 0 0 17%);
+  }
+
+  98%, 100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    filter: drop-shadow(0 0 0 rgba(130, 189, 58, 0));
+  }
+}
+
+@keyframes fudiciaMiniLogoSequence {
+  0%, 58.33% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.92);
+  }
+
+  64% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+
+  92% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+
+  98%, 100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.88);
+  }
+}
+
+@media (max-width: 700px) {
+  .brand-logo-sequence {
+    width: 168px;
+    min-width: 168px;
+    height: 50px;
+  }
+
+  .nav-logo-stage {
+    width: 168px;
+    height: 50px;
+  }
+
+  .brand-logo-sequence .logo,
+  .brand-logo-sequence .nav-full-logo {
+    width: 168px;
+  }
+
+  .brand-logo-sequence .nav-mini-logo {
+    width: 37px;
+  }
+}
+
+
+/* Final polish: smoother navbar logo reveal + true infinite company carousel */
+
+/* Smoother logo sequence using a GPU-friendly mask width, not clip-path on the SVG */
+.brand-logo-sequence {
+  width: 185px;
+  min-width: 185px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+.nav-logo-stage {
+  position: relative;
+  display: block;
+  width: 185px;
+  height: 54px;
+  overflow: visible;
+}
+
+.nav-full-mask {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 185px;
+  height: 54px;
+  transform: translateY(-50%) translateZ(0);
+  overflow: hidden;
+  animation: fudiciaFullLogoMaskSequence 12s cubic-bezier(.22, .72, .18, 1) infinite !important;
+  will-change: width, opacity;
+  backface-visibility: hidden;
+  contain: paint;
+}
+
+.nav-full-mask .nav-full-logo {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  width: 185px;
+  height: auto;
+  transform: translateY(-50%) translateZ(0);
+  animation: none !important;
+  clip-path: none !important;
+  opacity: 1;
+  will-change: opacity;
+  backface-visibility: hidden;
+}
+
+.brand-logo-sequence .nav-full-logo {
+  animation: none !important;
+  clip-path: none !important;
+}
+
+.brand-logo-sequence .logo {
+  animation: none !important;
+}
+
+.brand-logo-sequence .nav-mini-logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%) translateZ(0);
+  animation: fudiciaMiniLogoSequencePolished 12s cubic-bezier(.22, .72, .18, 1) infinite;
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+  filter: drop-shadow(0 0 12px rgba(130, 189, 58, .2));
+}
+
+.nav-mini-light {
+  display: none;
+}
+
+.theme-light .nav-mini-light {
+  display: block;
+}
+
+.theme-light .nav-mini-dark {
+  display: none;
+}
+
+@keyframes fudiciaFullLogoMaskSequence {
+  0%, 58.33% {
+    opacity: 1;
+    width: 185px;
+  }
+
+  65.5% {
+    opacity: 0;
+    width: 185px;
+  }
+
+  66.2% {
+    opacity: 1;
+    width: 0;
+  }
+
+  97%, 100% {
+    opacity: 1;
+    width: 185px;
+  }
+}
+
+@keyframes fudiciaMiniLogoSequencePolished {
+  0%, 58.33% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) translateZ(0);
+  }
+
+  64% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1) translateZ(0);
+  }
+
+  91% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1) translateZ(0);
+  }
+
+  97%, 100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.9) translateZ(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .brand-logo-sequence {
+    width: 168px;
+    min-width: 168px;
+    height: 50px;
+  }
+
+  .nav-logo-stage,
+  .nav-full-mask {
+    width: 168px;
+    height: 50px;
+  }
+
+  .nav-full-mask .nav-full-logo {
+    width: 168px;
+  }
+
+  .brand-logo-sequence .nav-mini-logo {
+    width: 37px;
+  }
+
+  @keyframes fudiciaFullLogoMaskSequence {
+    0%, 58.33% {
+      opacity: 1;
+      width: 168px;
+    }
+
+    65.5% {
+      opacity: 0;
+      width: 168px;
+    }
+
+    66.2% {
+      opacity: 1;
+      width: 0;
+    }
+
+    97%, 100% {
+      opacity: 1;
+      width: 168px;
+    }
+  }
+}
+
+/* True endless carousel: JS controls the loop, so dragging never reaches an empty area */
+.partner-marquee,
+.partner-slider,
+.partners-carousel,
+.logo-slider {
+  overflow: hidden !important;
+  position: relative;
+}
+
+.partner-track {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+  animation: none !important;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.partner-track:hover {
+  animation-play-state: unset !important;
+}
+
+.partner-track.is-dragging {
+  cursor: grabbing;
+}
+
+.partner-track * {
+  user-select: none;
+}
+
+.partner-logo {
+  flex: 0 0 auto;
+}
+
+.partner-logo img {
+  pointer-events: none;
+}
+
+
+/* Navbar logo merge animation — corrected:
+   Full logo -> mini logo alone -> right-to-left text reveal -> full logo.
+   The reveal stops at the mini-logo first, so it looks like the text merges into the F/stair mark. */
+.brand-logo-sequence {
+  width: 185px;
+  min-width: 185px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+.nav-merge-stage {
+  position: relative;
+  display: block;
+  width: 185px;
+  height: 54px;
+  overflow: visible;
+}
+
+.nav-merge-stage .logo {
+  width: 185px;
+  height: auto;
+  animation: none !important;
+}
+
+.nav-full-normal,
+.nav-text-reveal,
+.nav-merge-stage .nav-mini-logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateZ(0);
+  backface-visibility: hidden;
+  will-change: opacity, width, transform;
+}
+
+.nav-full-normal {
+  left: 0;
+  width: 185px;
+  height: 54px;
+  opacity: 1;
+  animation: fudiciaNormalLogoMerge 12s ease-in-out infinite !important;
+  z-index: 1;
+}
+
+.nav-full-normal .logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateZ(0);
+}
+
+/* Mini logo appears alone after the full logo fades out */
+.nav-merge-stage .nav-mini-logo {
+  left: 0;
+  width: 40px;
+  height: auto;
+  opacity: 0;
+  pointer-events: none;
+  animation: fudiciaMiniOnlyMerge 12s ease-in-out infinite !important;
+  z-index: 3;
+  filter: drop-shadow(0 0 12px rgba(130, 189, 58, .20));
+}
+
+/* This mask reveals ONLY the right/text side.
+   It grows right-to-left and stops at the mini-logo area before the final handoff. */
+.nav-text-reveal {
+  right: 0;
+  width: 0;
+  height: 54px;
+  overflow: hidden;
+  opacity: 0;
+  animation: fudiciaTextRevealMerge 12s cubic-bezier(.18, .82, .24, 1) infinite !important;
+  z-index: 2;
+  contain: paint;
+}
+
+.nav-text-reveal .nav-reveal-logo {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  width: 185px;
+  height: auto;
+  transform: translateY(-50%) translateZ(0);
+  animation: none !important;
+  clip-path: none !important;
+}
+
+/* Dark/light versions */
+.nav-mini-light {
+  display: none;
+}
+
+.theme-light .nav-mini-light {
+  display: block;
+}
+
+.theme-light .nav-mini-dark {
+  display: none;
+}
+
+/* Full logo is normal for 7s, then fades out. At the end, it takes over again cleanly. */
+@keyframes fudiciaNormalLogoMerge {
+  0%, 58.33% {
+    opacity: 1;
+  }
+
+  66% {
+    opacity: 0;
+  }
+
+  96% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Mini is visible while the text is returning, then disappears right as the full logo takes over. */
+@keyframes fudiciaMiniOnlyMerge {
+  0%, 61% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.96) translateZ(0);
+  }
+
+  67% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1) translateZ(0);
+  }
+
+  94% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1) translateZ(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.96) translateZ(0);
+  }
+}
+
+/* Width grows from the far right toward the mini-logo.
+   Max width is 145px, leaving ~40px for the mini-logo. */
+@keyframes fudiciaTextRevealMerge {
+  0%, 66% {
+    opacity: 0;
+    width: 0;
+  }
+
+  67% {
+    opacity: 1;
+    width: 0;
+  }
+
+  78% {
+    opacity: 1;
+    width: 62px;
+  }
+
+  90% {
+    opacity: 1;
+    width: 118px;
+  }
+
+  96% {
+    opacity: 1;
+    width: 145px;
+  }
+
+  100% {
+    opacity: 0;
+    width: 145px;
+  }
+}
+
+@media (max-width: 700px) {
+  .brand-logo-sequence,
+  .nav-merge-stage {
+    width: 168px;
+    min-width: 168px;
+    height: 50px;
+  }
+
+  .nav-merge-stage .logo,
+  .nav-full-normal,
+  .nav-text-reveal .nav-reveal-logo {
+    width: 168px;
+  }
+
+  .nav-full-normal,
+  .nav-text-reveal {
+    height: 50px;
+  }
+
+  .nav-merge-stage .nav-mini-logo {
+    width: 37px;
+  }
+
+  @keyframes fudiciaTextRevealMerge {
+    0%, 66% {
+      opacity: 0;
+      width: 0;
+    }
+
+    67% {
+      opacity: 1;
+      width: 0;
+    }
+
+    78% {
+      opacity: 1;
+      width: 56px;
+    }
+
+    90% {
+      opacity: 1;
+      width: 107px;
+    }
+
+    96% {
+      opacity: 1;
+      width: 131px;
+    }
+
+    100% {
+      opacity: 0;
+      width: 131px;
+    }
+  }
+}
+
+
+/* Mini-logo shrink during merge:
+   As the right-to-left full-logo text returns, the mini-logo gradually gets smaller
+   so it visually matches the incoming F before disappearing. */
+.nav-merge-stage .nav-mini-logo {
+  transform-origin: left center !important;
+}
+
+@keyframes fudiciaMiniOnlyMerge {
+  0%, 61% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.96) translateZ(0);
+  }
+
+  67% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1) translateZ(0);
+  }
+
+  78% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) translateZ(0);
+  }
+
+  88% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.88) translateZ(0);
+  }
+
+  95.5% {
+    opacity: .92;
+    transform: translateY(-50%) scale(.81) translateZ(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.78) translateZ(0);
+  }
+}
+
+
+/* Final navbar mini-logo sizing:
+   Keep the temporary mini-logo 10% smaller during the animation,
+   then let it fade out cleanly. */
+.nav-merge-stage .nav-mini-logo {
+  left: 0 !important;
+  transform-origin: left center !important;
+}
+
+@keyframes fudiciaMiniOnlyMerge {
+  0%, 61% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+
+  67% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+
+  94% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+}
+
+
+/* Requested polish: softer dark mode, readable partner cards, slower logo animation, more hero floaters */
+
+/* Dark mode: still premium, but less black/heavy */
+:root {
+  --bg: #16231f;
+  --bg-2: #1d2e29;
+  --surface: rgba(255, 255, 255, .075);
+  --surface-2: rgba(255, 255, 255, .105);
+  --card: rgba(255, 255, 255, .105);
+  --border: rgba(255, 255, 255, .18);
+  --text: #f4f8f4;
+  --muted: #c8d3ca;
+}
+
+/* Lighten the large dark gradients/sections without changing the brand mood */
+body:not(.theme-light),
+body:not(.theme-light)::before {
+  background-color: #16231f;
+}
+
+.hero,
+.section,
+.site-footer {
+  background-blend-mode: screen;
+}
+
+/* Partner logo cards: brighter surface in dark mode so dark logos like Amazon remain readable */
+body:not(.theme-light) .partner-logo {
+  background: rgba(255, 255, 255, .90) !important;
+  border-color: rgba(255, 255, 255, .42) !important;
+  box-shadow: 0 22px 56px rgba(0, 0, 0, .22);
+}
+
+body:not(.theme-light) .partner-logo:hover {
+  background: rgba(255, 255, 255, .98) !important;
+}
+
+/* Navbar logo animation: every 15 seconds and slower overall */
+.nav-full-normal {
+  animation-duration: 15s !important;
+}
+
+.nav-text-reveal {
+  animation-duration: 15s !important;
+  animation-timing-function: cubic-bezier(.12, .78, .20, 1) !important;
+}
+
+.nav-merge-stage .nav-mini-logo {
+  animation-duration: 15s !important;
+}
+
+/* Re-time the sequence:
+   about 9 seconds normal, then mini-logo alone, then a slower right-to-left merge. */
+@keyframes fudiciaNormalLogoMerge {
+  0%, 60% {
+    opacity: 1;
+  }
+
+  69% {
+    opacity: 0;
+  }
+
+  97% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fudiciaMiniOnlyMerge {
+  0%, 64% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+
+  95% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+}
+
+@keyframes fudiciaTextRevealMerge {
+  0%, 70% {
+    opacity: 0;
+    width: 0;
+  }
+
+  71% {
+    opacity: 1;
+    width: 0;
+  }
+
+  82% {
+    opacity: 1;
+    width: 50px;
+  }
+
+  91% {
+    opacity: 1;
+    width: 105px;
+  }
+
+  97% {
+    opacity: 1;
+    width: 145px;
+  }
+
+  100% {
+    opacity: 0;
+    width: 145px;
+  }
+}
+
+/* More hero floaters around the mini-logo */
+.hero-logo-stage {
+  overflow: visible !important;
+}
+
+.tax-card {
+  opacity: .92;
+}
+
+.card-four,
+.card-five,
+.card-six,
+.card-seven {
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 2;
+  white-space: nowrap;
+  pointer-events: none;
+  animation-timing-function: linear !important;
+  animation-iteration-count: infinite !important;
+}
+
+.card-four {
+  animation-name: fudiciaOrbitFour !important;
+  animation-duration: 34s !important;
+  animation-delay: -4s !important;
+}
+
+.card-five {
+  animation-name: fudiciaOrbitFive !important;
+  animation-duration: 38s !important;
+  animation-delay: -16s !important;
+}
+
+.card-six {
+  animation-name: fudiciaOrbitSix !important;
+  animation-duration: 42s !important;
+  animation-delay: -25s !important;
+}
+
+.card-seven {
+  animation-name: fudiciaOrbitSeven !important;
+  animation-duration: 46s !important;
+  animation-delay: -31s !important;
+}
+
+@keyframes fudiciaOrbitFour {
+  0%   { transform: translate(-50%, -50%) rotate(48deg) translateX(285px) rotate(-48deg); }
+  100% { transform: translate(-50%, -50%) rotate(408deg) translateX(285px) rotate(-408deg); }
+}
+
+@keyframes fudiciaOrbitFive {
+  0%   { transform: translate(-50%, -50%) rotate(168deg) translateX(275px) rotate(-168deg); }
+  100% { transform: translate(-50%, -50%) rotate(528deg) translateX(275px) rotate(-528deg); }
+}
+
+@keyframes fudiciaOrbitSix {
+  0%   { transform: translate(-50%, -50%) rotate(288deg) translateX(295px) rotate(-288deg); }
+  100% { transform: translate(-50%, -50%) rotate(648deg) translateX(295px) rotate(-648deg); }
+}
+
+@keyframes fudiciaOrbitSeven {
+  0%   { transform: translate(-50%, -50%) rotate(338deg) translateX(250px) rotate(-338deg); }
+  100% { transform: translate(-50%, -50%) rotate(698deg) translateX(250px) rotate(-698deg); }
+}
+
+@media (max-width: 700px) {
+  @keyframes fudiciaTextRevealMerge {
+    0%, 70% {
+      opacity: 0;
+      width: 0;
+    }
+
+    71% {
+      opacity: 1;
+      width: 0;
+    }
+
+    82% {
+      opacity: 1;
+      width: 44px;
+    }
+
+    91% {
+      opacity: 1;
+      width: 96px;
+    }
+
+    97% {
+      opacity: 1;
+      width: 131px;
+    }
+
+    100% {
+      opacity: 0;
+      width: 131px;
+    }
+  }
+
+  .card-four {
+    animation-name: fudiciaOrbitFourMobile !important;
+    animation-duration: 30s !important;
+  }
+
+  .card-five {
+    animation-name: fudiciaOrbitFiveMobile !important;
+    animation-duration: 34s !important;
+  }
+
+  .card-six {
+    animation-name: fudiciaOrbitSixMobile !important;
+    animation-duration: 38s !important;
+  }
+
+  .card-seven {
+    animation-name: fudiciaOrbitSevenMobile !important;
+    animation-duration: 42s !important;
+  }
+}
+
+@keyframes fudiciaOrbitFourMobile {
+  0%   { transform: translate(-50%, -50%) rotate(48deg) translateX(180px) rotate(-48deg); }
+  100% { transform: translate(-50%, -50%) rotate(408deg) translateX(180px) rotate(-408deg); }
+}
+
+@keyframes fudiciaOrbitFiveMobile {
+  0%   { transform: translate(-50%, -50%) rotate(168deg) translateX(172px) rotate(-168deg); }
+  100% { transform: translate(-50%, -50%) rotate(528deg) translateX(172px) rotate(-528deg); }
+}
+
+@keyframes fudiciaOrbitSixMobile {
+  0%   { transform: translate(-50%, -50%) rotate(288deg) translateX(188px) rotate(-288deg); }
+  100% { transform: translate(-50%, -50%) rotate(648deg) translateX(188px) rotate(-648deg); }
+}
+
+@keyframes fudiciaOrbitSevenMobile {
+  0%   { transform: translate(-50%, -50%) rotate(338deg) translateX(160px) rotate(-338deg); }
+  100% { transform: translate(-50%, -50%) rotate(698deg) translateX(160px) rotate(-698deg); }
+}
+
+
+/* Final timing correction:
+   Keep the original navbar logo transition speed/feel,
+   but wait 15 seconds before the animation begins.
+   Total cycle = 20s: 15s idle + about 5s transition. */
+.nav-full-normal,
+.nav-text-reveal,
+.nav-merge-stage .nav-mini-logo {
+  animation-duration: 20s !important;
+}
+
+/* Full logo visible for 15s, then normal fade/merge sequence starts. */
+@keyframes fudiciaNormalLogoMerge {
+  0%, 75% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  98% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Temporary mini-logo appears 10% smaller, stays while the text returns, then fades out. */
+@keyframes fudiciaMiniOnlyMerge {
+  0%, 77% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+
+  81% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+
+  96% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.90) translateZ(0);
+  }
+}
+
+/* Right-to-left reveal keeps the same approximate transition duration,
+   just shifted later in the 20s cycle. */
+@keyframes fudiciaTextRevealMerge {
+  0%, 81% {
+    opacity: 0;
+    width: 0;
+  }
+
+  82% {
+    opacity: 1;
+    width: 0;
+  }
+
+  88% {
+    opacity: 1;
+    width: 62px;
+  }
+
+  94% {
+    opacity: 1;
+    width: 118px;
+  }
+
+  98% {
+    opacity: 1;
+    width: 145px;
+  }
+
+  100% {
+    opacity: 0;
+    width: 145px;
+  }
+}
+
+/* More orbiting hero floaters + mobile visibility fix */
+.hero-logo-stage {
+  overflow: visible !important;
+}
+
+.tax-card {
+  display: block !important;
+  visibility: visible !important;
+  opacity: .92;
+}
+
+/* Make sure mobile does not hide the orbiting labels */
+@media (max-width: 850px) {
+  .tax-card {
+    display: block !important;
+    visibility: visible !important;
+    opacity: .9 !important;
+    font-size: 11px;
+    padding: 8px 10px;
+    border-radius: 13px;
+    z-index: 2;
+  }
+}
+
+.card-eight,
+.card-nine,
+.card-ten {
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 2;
+  white-space: nowrap;
+  pointer-events: none;
+  animation-timing-function: linear !important;
+  animation-iteration-count: infinite !important;
+}
+
+.card-eight {
+  animation-name: fudiciaOrbitEight !important;
+  animation-duration: 44s !important;
+  animation-delay: -9s !important;
+}
+
+.card-nine {
+  animation-name: fudiciaOrbitNine !important;
+  animation-duration: 48s !important;
+  animation-delay: -22s !important;
+}
+
+.card-ten {
+  animation-name: fudiciaOrbitTen !important;
+  animation-duration: 52s !important;
+  animation-delay: -34s !important;
+}
+
+@keyframes fudiciaOrbitEight {
+  0%   { transform: translate(-50%, -50%) rotate(82deg) translateX(315px) rotate(-82deg); }
+  100% { transform: translate(-50%, -50%) rotate(442deg) translateX(315px) rotate(-442deg); }
+}
+
+@keyframes fudiciaOrbitNine {
+  0%   { transform: translate(-50%, -50%) rotate(214deg) translateX(305px) rotate(-214deg); }
+  100% { transform: translate(-50%, -50%) rotate(574deg) translateX(305px) rotate(-574deg); }
+}
+
+@keyframes fudiciaOrbitTen {
+  0%   { transform: translate(-50%, -50%) rotate(318deg) translateX(330px) rotate(-318deg); }
+  100% { transform: translate(-50%, -50%) rotate(678deg) translateX(330px) rotate(-678deg); }
+}
+
+@media (max-width: 700px) {
+  @keyframes fudiciaTextRevealMerge {
+    0%, 81% {
+      opacity: 0;
+      width: 0;
+    }
+
+    82% {
+      opacity: 1;
+      width: 0;
+    }
+
+    88% {
+      opacity: 1;
+      width: 56px;
+    }
+
+    94% {
+      opacity: 1;
+      width: 107px;
+    }
+
+    98% {
+      opacity: 1;
+      width: 131px;
+    }
+
+    100% {
+      opacity: 0;
+      width: 131px;
+    }
+  }
+
+  /* Existing floaters forced into smaller phone orbits so they appear on-screen */
+  .card-one {
+    animation-name: fudiciaOrbitOnePhone !important;
+    animation-duration: 20s !important;
+  }
+
+  .card-two {
+    animation-name: fudiciaOrbitTwoPhone !important;
+    animation-duration: 24s !important;
+  }
+
+  .card-three {
+    animation-name: fudiciaOrbitThreePhone !important;
+    animation-duration: 28s !important;
+  }
+
+  .card-four {
+    animation-name: fudiciaOrbitFourPhone !important;
+    animation-duration: 31s !important;
+  }
+
+  .card-five {
+    animation-name: fudiciaOrbitFivePhone !important;
+    animation-duration: 35s !important;
+  }
+
+  .card-six {
+    animation-name: fudiciaOrbitSixPhone !important;
+    animation-duration: 39s !important;
+  }
+
+  .card-seven {
+    animation-name: fudiciaOrbitSevenPhone !important;
+    animation-duration: 43s !important;
+  }
+
+  .card-eight {
+    animation-name: fudiciaOrbitEightPhone !important;
+    animation-duration: 45s !important;
+  }
+
+  .card-nine {
+    animation-name: fudiciaOrbitNinePhone !important;
+    animation-duration: 49s !important;
+  }
+
+  .card-ten {
+    animation-name: fudiciaOrbitTenPhone !important;
+    animation-duration: 53s !important;
+  }
+}
+
+@keyframes fudiciaOrbitOnePhone {
+  0%   { transform: translate(-50%, -50%) rotate(-26deg) translateX(124px) rotate(26deg); }
+  100% { transform: translate(-50%, -50%) rotate(334deg) translateX(124px) rotate(-334deg); }
+}
+
+@keyframes fudiciaOrbitTwoPhone {
+  0%   { transform: translate(-50%, -50%) rotate(114deg) translateX(132px) rotate(-114deg); }
+  100% { transform: translate(-50%, -50%) rotate(474deg) translateX(132px) rotate(-474deg); }
+}
+
+@keyframes fudiciaOrbitThreePhone {
+  0%   { transform: translate(-50%, -50%) rotate(226deg) translateX(140px) rotate(-226deg); }
+  100% { transform: translate(-50%, -50%) rotate(586deg) translateX(140px) rotate(-586deg); }
+}
+
+@keyframes fudiciaOrbitFourPhone {
+  0%   { transform: translate(-50%, -50%) rotate(48deg) translateX(150px) rotate(-48deg); }
+  100% { transform: translate(-50%, -50%) rotate(408deg) translateX(150px) rotate(-408deg); }
+}
+
+@keyframes fudiciaOrbitFivePhone {
+  0%   { transform: translate(-50%, -50%) rotate(168deg) translateX(146px) rotate(-168deg); }
+  100% { transform: translate(-50%, -50%) rotate(528deg) translateX(146px) rotate(-528deg); }
+}
+
+@keyframes fudiciaOrbitSixPhone {
+  0%   { transform: translate(-50%, -50%) rotate(288deg) translateX(154px) rotate(-288deg); }
+  100% { transform: translate(-50%, -50%) rotate(648deg) translateX(154px) rotate(-648deg); }
+}
+
+@keyframes fudiciaOrbitSevenPhone {
+  0%   { transform: translate(-50%, -50%) rotate(338deg) translateX(118px) rotate(-338deg); }
+  100% { transform: translate(-50%, -50%) rotate(698deg) translateX(118px) rotate(-698deg); }
+}
+
+@keyframes fudiciaOrbitEightPhone {
+  0%   { transform: translate(-50%, -50%) rotate(82deg) translateX(162px) rotate(-82deg); }
+  100% { transform: translate(-50%, -50%) rotate(442deg) translateX(162px) rotate(-442deg); }
+}
+
+@keyframes fudiciaOrbitNinePhone {
+  0%   { transform: translate(-50%, -50%) rotate(214deg) translateX(158px) rotate(-214deg); }
+  100% { transform: translate(-50%, -50%) rotate(574deg) translateX(158px) rotate(-574deg); }
+}
+
+@keyframes fudiciaOrbitTenPhone {
+  0%   { transform: translate(-50%, -50%) rotate(318deg) translateX(168px) rotate(-318deg); }
+  100% { transform: translate(-50%, -50%) rotate(678deg) translateX(168px) rotate(-678deg); }
+}
+
+
+/* FINAL NAVBAR LOGO ANIMATION:
+   Normal logo for 15 seconds -> full logo fades out -> mini-logo fades in and shakes -> mini-logo fades out -> full logo returns. */
+.brand-logo-sequence {
+  width: 185px;
+  min-width: 185px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+.nav-merge-stage {
+  position: relative;
+  display: block;
+  width: 185px;
+  height: 54px;
+  overflow: visible;
+}
+
+.nav-full-normal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 185px;
+  height: 54px;
+  transform: translateY(-50%) translateZ(0);
+  opacity: 1;
+  z-index: 2;
+  animation: fudiciaSimpleFullLogo 19s ease-in-out infinite !important;
+  will-change: opacity;
+}
+
+.nav-full-normal .logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 185px;
+  height: auto;
+  transform: translateY(-50%) translateZ(0);
+  animation: none !important;
+  clip-path: none !important;
+}
+
+.nav-text-reveal {
+  display: none !important;
+  animation: none !important;
+}
+
+.nav-merge-stage .nav-mini-logo {
+  position: absolute;
+  top: 50%;
+  left: 0 !important;
+  width: 40px;
+  height: auto;
+  opacity: 0;
+  z-index: 3;
+  pointer-events: none;
+  transform-origin: center center !important;
+  animation: fudiciaMiniLogoShake 19s ease-in-out infinite !important;
+  will-change: opacity, transform;
+}
+
+.nav-mini-light {
+  display: none;
+}
+
+.theme-light .nav-mini-light {
+  display: block;
+}
+
+.theme-light .nav-mini-dark {
+  display: none;
+}
+
+@keyframes fudiciaSimpleFullLogo {
+  0%, 78.95% {
+    opacity: 1;
+  }
+
+  83.2% {
+    opacity: 0;
+  }
+
+  94.7% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fudiciaMiniLogoShake {
+  0%, 81.6% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) rotate(0deg) translateZ(0);
+  }
+
+  84.2% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(0deg) translateZ(0);
+  }
+
+  85.4% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(-4deg) translateZ(0);
+  }
+
+  86.6% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(4deg) translateZ(0);
+  }
+
+  87.8% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(-3deg) translateZ(0);
+  }
+
+  89.0% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(3deg) translateZ(0);
+  }
+
+  90.2% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(0deg) translateZ(0);
+  }
+
+  91.6% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(0deg) translateZ(0);
+  }
+
+  94.7% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) rotate(0deg) translateZ(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) rotate(0deg) translateZ(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .brand-logo-sequence,
+  .nav-merge-stage {
+    width: 168px;
+    min-width: 168px;
+    height: 50px;
+  }
+
+  .nav-full-normal {
+    width: 168px;
+    height: 50px;
+  }
+
+  .nav-full-normal .logo {
+    width: 168px;
+  }
+
+  .nav-merge-stage .nav-mini-logo {
+    width: 37px;
+  }
+}
+
+/* EXACTLY 5 HERO FLOATERS — visible on desktop and phone */
+.hero-logo-stage {
+  overflow: visible !important;
+  position: relative;
+  min-height: 420px;
+}
+
+.tax-card {
+  display: block !important;
+  visibility: visible !important;
+  opacity: .94 !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 3;
+  white-space: nowrap;
+  pointer-events: none;
+  animation-timing-function: linear !important;
+  animation-iteration-count: infinite !important;
+}
+
+.card-one {
+  animation-name: fudiciaFiveOrbitOne !important;
+  animation-duration: 23s !important;
+  animation-delay: -2s !important;
+}
+
+.card-two {
+  animation-name: fudiciaFiveOrbitTwo !important;
+  animation-duration: 27s !important;
+  animation-delay: -8s !important;
+}
+
+.card-three {
+  animation-name: fudiciaFiveOrbitThree !important;
+  animation-duration: 31s !important;
+  animation-delay: -14s !important;
+}
+
+.card-four {
+  animation-name: fudiciaFiveOrbitFour !important;
+  animation-duration: 35s !important;
+  animation-delay: -20s !important;
+}
+
+.card-five {
+  animation-name: fudiciaFiveOrbitFive !important;
+  animation-duration: 39s !important;
+  animation-delay: -27s !important;
+}
+
+@keyframes fudiciaFiveOrbitOne {
+  0%   { transform: translate(-50%, -50%) rotate(-30deg) translateX(245px) rotate(30deg); }
+  100% { transform: translate(-50%, -50%) rotate(330deg) translateX(245px) rotate(-330deg); }
+}
+
+@keyframes fudiciaFiveOrbitTwo {
+  0%   { transform: translate(-50%, -50%) rotate(52deg) translateX(285px) rotate(-52deg); }
+  100% { transform: translate(-50%, -50%) rotate(412deg) translateX(285px) rotate(-412deg); }
+}
+
+@keyframes fudiciaFiveOrbitThree {
+  0%   { transform: translate(-50%, -50%) rotate(136deg) translateX(260px) rotate(-136deg); }
+  100% { transform: translate(-50%, -50%) rotate(496deg) translateX(260px) rotate(-496deg); }
+}
+
+@keyframes fudiciaFiveOrbitFour {
+  0%   { transform: translate(-50%, -50%) rotate(220deg) translateX(300px) rotate(-220deg); }
+  100% { transform: translate(-50%, -50%) rotate(580deg) translateX(300px) rotate(-580deg); }
+}
+
+@keyframes fudiciaFiveOrbitFive {
+  0%   { transform: translate(-50%, -50%) rotate(302deg) translateX(270px) rotate(-302deg); }
+  100% { transform: translate(-50%, -50%) rotate(662deg) translateX(270px) rotate(-662deg); }
+}
+
+@media (max-width: 850px) {
+  .hero-logo-stage {
+    min-height: 330px;
+    overflow: visible !important;
+  }
+
+  .tax-card {
+    display: block !important;
+    visibility: visible !important;
+    opacity: .92 !important;
+    font-size: 11px !important;
+    padding: 7px 9px !important;
+    border-radius: 12px !important;
+    z-index: 3;
+  }
+
+  .card-one {
+    animation-name: fudiciaFiveOrbitOnePhone !important;
+    animation-duration: 22s !important;
+  }
+
+  .card-two {
+    animation-name: fudiciaFiveOrbitTwoPhone !important;
+    animation-duration: 25s !important;
+  }
+
+  .card-three {
+    animation-name: fudiciaFiveOrbitThreePhone !important;
+    animation-duration: 28s !important;
+  }
+
+  .card-four {
+    animation-name: fudiciaFiveOrbitFourPhone !important;
+    animation-duration: 31s !important;
+  }
+
+  .card-five {
+    animation-name: fudiciaFiveOrbitFivePhone !important;
+    animation-duration: 34s !important;
+  }
+}
+
+@keyframes fudiciaFiveOrbitOnePhone {
+  0%   { transform: translate(-50%, -50%) rotate(-25deg) translateX(118px) rotate(25deg); }
+  100% { transform: translate(-50%, -50%) rotate(335deg) translateX(118px) rotate(-335deg); }
+}
+
+@keyframes fudiciaFiveOrbitTwoPhone {
+  0%   { transform: translate(-50%, -50%) rotate(50deg) translateX(138px) rotate(-50deg); }
+  100% { transform: translate(-50%, -50%) rotate(410deg) translateX(138px) rotate(-410deg); }
+}
+
+@keyframes fudiciaFiveOrbitThreePhone {
+  0%   { transform: translate(-50%, -50%) rotate(132deg) translateX(126px) rotate(-132deg); }
+  100% { transform: translate(-50%, -50%) rotate(492deg) translateX(126px) rotate(-492deg); }
+}
+
+@keyframes fudiciaFiveOrbitFourPhone {
+  0%   { transform: translate(-50%, -50%) rotate(220deg) translateX(146px) rotate(-220deg); }
+  100% { transform: translate(-50%, -50%) rotate(580deg) translateX(146px) rotate(-580deg); }
+}
+
+@keyframes fudiciaFiveOrbitFivePhone {
+  0%   { transform: translate(-50%, -50%) rotate(304deg) translateX(132px) rotate(-304deg); }
+  100% { transform: translate(-50%, -50%) rotate(664deg) translateX(132px) rotate(-664deg); }
+}
+
+
+/* CLEAN FINAL OVERRIDE — simple navbar animation + exactly 5 hero floaters */
+
+/* Navbar: full logo 15s -> fade out -> mini logo fades in and shakes once -> waits 2s -> fades out -> full logo returns */
+.brand-simple-cycle {
+  width: 185px !important;
+  min-width: 185px !important;
+  height: 54px !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.nav-simple-logo-stage {
+  position: relative !important;
+  display: block !important;
+  width: 185px !important;
+  height: 54px !important;
+  overflow: visible !important;
+}
+
+.nav-simple-full {
+  position: absolute !important;
+  inset: 0 auto auto 0 !important;
+  width: 185px !important;
+  height: 54px !important;
+  opacity: 1;
+  animation: fudiciaCleanFullLogoCycle 19s ease-in-out infinite !important;
+  z-index: 2 !important;
+}
+
+.nav-simple-full .logo {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  width: 185px !important;
+  height: auto !important;
+  transform: translateY(-50%) !important;
+  animation: none !important;
+  clip-path: none !important;
+  opacity: 1 !important;
+}
+
+.nav-simple-mini {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  width: 40px !important;
+  height: auto !important;
+  opacity: 0;
+  z-index: 3 !important;
+  pointer-events: none !important;
+  transform-origin: center center !important;
+  animation: fudiciaCleanMiniShakeCycle 19s ease-in-out infinite !important;
+}
+
+/* Kill old navbar animation layers from previous versions */
+.nav-merge-stage,
+.nav-logo-stage,
+.nav-full-normal,
+.nav-text-reveal,
+.nav-full-mask,
+.nav-mini-logo {
+  animation: none !important;
+}
+
+.brand-simple-cycle .nav-merge-stage,
+.brand-simple-cycle .nav-logo-stage,
+.brand-simple-cycle .nav-full-normal,
+.brand-simple-cycle .nav-text-reveal,
+.brand-simple-cycle .nav-full-mask,
+.brand-simple-cycle .nav-mini-logo {
+  display: none !important;
+}
+
+.nav-simple-mini-light {
+  display: none;
+}
+
+.theme-light .nav-simple-mini-light {
+  display: block;
+}
+
+.theme-light .nav-simple-mini-dark {
+  display: none;
+}
+
+@keyframes fudiciaCleanFullLogoCycle {
+  0%, 78.95% {
+    opacity: 1;
+  }
+  84.2%, 94.7% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fudiciaCleanMiniShakeCycle {
+  0%, 83.1% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+  84.2% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+  85.1% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(-5deg);
+  }
+  86.0% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(5deg);
+  }
+  86.9% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(-3deg);
+  }
+  87.8% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(3deg);
+  }
+  88.7%, 92.6% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+  94.7%, 100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .brand-simple-cycle,
+  .nav-simple-logo-stage {
+    width: 168px !important;
+    min-width: 168px !important;
+    height: 50px !important;
+  }
+
+  .nav-simple-full {
+    width: 168px !important;
+    height: 50px !important;
+  }
+
+  .nav-simple-full .logo {
+    width: 168px !important;
+  }
+
+  .nav-simple-mini {
+    width: 37px !important;
+  }
+}
+
+/* Exactly 5 floaters around the hero mini-logo */
+.hero-logo-stage {
+  position: relative !important;
+  overflow: visible !important;
+  min-height: 420px !important;
+}
+
+.tax-card {
+  display: block !important;
+  visibility: visible !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  opacity: .94 !important;
+  z-index: 5 !important;
+  white-space: nowrap !important;
+  pointer-events: none !important;
+  animation-timing-function: linear !important;
+  animation-iteration-count: infinite !important;
+}
+
+.card-one { animation: fudiciaCleanOrbitOne 24s linear infinite !important; }
+.card-two { animation: fudiciaCleanOrbitTwo 28s linear infinite !important; }
+.card-three { animation: fudiciaCleanOrbitThree 32s linear infinite !important; }
+.card-four { animation: fudiciaCleanOrbitFour 36s linear infinite !important; }
+.card-five { animation: fudiciaCleanOrbitFive 40s linear infinite !important; }
+
+@keyframes fudiciaCleanOrbitOne {
+  0%   { transform: translate(-50%, -50%) rotate(-35deg) translateX(255px) rotate(35deg); }
+  100% { transform: translate(-50%, -50%) rotate(325deg) translateX(255px) rotate(-325deg); }
+}
+@keyframes fudiciaCleanOrbitTwo {
+  0%   { transform: translate(-50%, -50%) rotate(40deg) translateX(290px) rotate(-40deg); }
+  100% { transform: translate(-50%, -50%) rotate(400deg) translateX(290px) rotate(-400deg); }
+}
+@keyframes fudiciaCleanOrbitThree {
+  0%   { transform: translate(-50%, -50%) rotate(122deg) translateX(270px) rotate(-122deg); }
+  100% { transform: translate(-50%, -50%) rotate(482deg) translateX(270px) rotate(-482deg); }
+}
+@keyframes fudiciaCleanOrbitFour {
+  0%   { transform: translate(-50%, -50%) rotate(210deg) translateX(305px) rotate(-210deg); }
+  100% { transform: translate(-50%, -50%) rotate(570deg) translateX(305px) rotate(-570deg); }
+}
+@keyframes fudiciaCleanOrbitFive {
+  0%   { transform: translate(-50%, -50%) rotate(292deg) translateX(280px) rotate(-292deg); }
+  100% { transform: translate(-50%, -50%) rotate(652deg) translateX(280px) rotate(-652deg); }
+}
+
+@media (max-width: 850px) {
+  .hero-logo-stage {
+    min-height: 330px !important;
+    overflow: visible !important;
+  }
+
+  .tax-card {
+    display: block !important;
+    visibility: visible !important;
+    font-size: 11px !important;
+    padding: 7px 9px !important;
+    border-radius: 12px !important;
+    opacity: .92 !important;
+  }
+
+  .card-one { animation: fudiciaCleanOrbitOnePhone 23s linear infinite !important; }
+  .card-two { animation: fudiciaCleanOrbitTwoPhone 26s linear infinite !important; }
+  .card-three { animation: fudiciaCleanOrbitThreePhone 29s linear infinite !important; }
+  .card-four { animation: fudiciaCleanOrbitFourPhone 32s linear infinite !important; }
+  .card-five { animation: fudiciaCleanOrbitFivePhone 35s linear infinite !important; }
+}
+
+@keyframes fudiciaCleanOrbitOnePhone {
+  0%   { transform: translate(-50%, -50%) rotate(-35deg) translateX(128px) rotate(35deg); }
+  100% { transform: translate(-50%, -50%) rotate(325deg) translateX(128px) rotate(-325deg); }
+}
+@keyframes fudiciaCleanOrbitTwoPhone {
+  0%   { transform: translate(-50%, -50%) rotate(40deg) translateX(145px) rotate(-40deg); }
+  100% { transform: translate(-50%, -50%) rotate(400deg) translateX(145px) rotate(-400deg); }
+}
+@keyframes fudiciaCleanOrbitThreePhone {
+  0%   { transform: translate(-50%, -50%) rotate(122deg) translateX(136px) rotate(-122deg); }
+  100% { transform: translate(-50%, -50%) rotate(482deg) translateX(136px) rotate(-482deg); }
+}
+@keyframes fudiciaCleanOrbitFourPhone {
+  0%   { transform: translate(-50%, -50%) rotate(210deg) translateX(152px) rotate(-210deg); }
+  100% { transform: translate(-50%, -50%) rotate(570deg) translateX(152px) rotate(-570deg); }
+}
+@keyframes fudiciaCleanOrbitFivePhone {
+  0%   { transform: translate(-50%, -50%) rotate(292deg) translateX(142px) rotate(-292deg); }
+  100% { transform: translate(-50%, -50%) rotate(652deg) translateX(142px) rotate(-652deg); }
+}
+
+
+/* HERO FLOATERS FIX:
+   Keep the floating terms orbiting ONLY around the big hero mini-logo,
+   not across the text side or near the navbar. */
+.hero-logo-stage {
+  position: relative !important;
+  width: min(520px, 100%) !important;
+  height: 520px !important;
+  min-height: 520px !important;
+  margin-inline: auto !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: visible !important;
+  isolation: isolate !important;
+}
+
+.hero-logo-stage .hero-mini,
+.hero-logo-stage .mini-logo,
+.hero-logo-stage img[class*="mini"] {
+  position: relative !important;
+  z-index: 4 !important;
+}
+
+.tax-card {
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 6 !important;
+  position: absolute !important;
+  pointer-events: none !important;
+  white-space: nowrap !important;
+}
+
+/* Smaller, cleaner orbits around the actual hero logo */
+.card-one { animation: heroLogoOrbitOne 24s linear infinite !important; }
+.card-two { animation: heroLogoOrbitTwo 28s linear infinite !important; }
+.card-three { animation: heroLogoOrbitThree 32s linear infinite !important; }
+.card-four { animation: heroLogoOrbitFour 36s linear infinite !important; }
+.card-five { animation: heroLogoOrbitFive 40s linear infinite !important; }
+
+@keyframes heroLogoOrbitOne {
+  0%   { transform: translate(-50%, -50%) rotate(-18deg) translateX(225px) rotate(18deg); }
+  100% { transform: translate(-50%, -50%) rotate(342deg) translateX(225px) rotate(-342deg); }
+}
+
+@keyframes heroLogoOrbitTwo {
+  0%   { transform: translate(-50%, -50%) rotate(54deg) translateX(235px) rotate(-54deg); }
+  100% { transform: translate(-50%, -50%) rotate(414deg) translateX(235px) rotate(-414deg); }
+}
+
+@keyframes heroLogoOrbitThree {
+  0%   { transform: translate(-50%, -50%) rotate(128deg) translateX(220px) rotate(-128deg); }
+  100% { transform: translate(-50%, -50%) rotate(488deg) translateX(220px) rotate(-488deg); }
+}
+
+@keyframes heroLogoOrbitFour {
+  0%   { transform: translate(-50%, -50%) rotate(204deg) translateX(238px) rotate(-204deg); }
+  100% { transform: translate(-50%, -50%) rotate(564deg) translateX(238px) rotate(-564deg); }
+}
+
+@keyframes heroLogoOrbitFive {
+  0%   { transform: translate(-50%, -50%) rotate(286deg) translateX(228px) rotate(-286deg); }
+  100% { transform: translate(-50%, -50%) rotate(646deg) translateX(228px) rotate(-646deg); }
+}
+
+@media (max-width: 850px) {
+  .hero-logo-stage {
+    width: min(340px, 100%) !important;
+    height: 340px !important;
+    min-height: 340px !important;
+    margin-inline: auto !important;
+    overflow: visible !important;
+  }
+
+  .tax-card {
+    display: block !important;
+    visibility: visible !important;
+    opacity: .92 !important;
+    font-size: 11px !important;
+    padding: 7px 9px !important;
+    border-radius: 12px !important;
+  }
+
+  .card-one { animation: heroLogoOrbitOnePhone 24s linear infinite !important; }
+  .card-two { animation: heroLogoOrbitTwoPhone 28s linear infinite !important; }
+  .card-three { animation: heroLogoOrbitThreePhone 32s linear infinite !important; }
+  .card-four { animation: heroLogoOrbitFourPhone 36s linear infinite !important; }
+  .card-five { animation: heroLogoOrbitFivePhone 40s linear infinite !important; }
+}
+
+@keyframes heroLogoOrbitOnePhone {
+  0%   { transform: translate(-50%, -50%) rotate(-18deg) translateX(132px) rotate(18deg); }
+  100% { transform: translate(-50%, -50%) rotate(342deg) translateX(132px) rotate(-342deg); }
+}
+
+@keyframes heroLogoOrbitTwoPhone {
+  0%   { transform: translate(-50%, -50%) rotate(54deg) translateX(142px) rotate(-54deg); }
+  100% { transform: translate(-50%, -50%) rotate(414deg) translateX(142px) rotate(-414deg); }
+}
+
+@keyframes heroLogoOrbitThreePhone {
+  0%   { transform: translate(-50%, -50%) rotate(128deg) translateX(128px) rotate(-128deg); }
+  100% { transform: translate(-50%, -50%) rotate(488deg) translateX(128px) rotate(-488deg); }
+}
+
+@keyframes heroLogoOrbitFourPhone {
+  0%   { transform: translate(-50%, -50%) rotate(204deg) translateX(146px) rotate(-204deg); }
+  100% { transform: translate(-50%, -50%) rotate(564deg) translateX(146px) rotate(-564deg); }
+}
+
+@keyframes heroLogoOrbitFivePhone {
+  0%   { transform: translate(-50%, -50%) rotate(286deg) translateX(136px) rotate(-286deg); }
+  100% { transform: translate(-50%, -50%) rotate(646deg) translateX(136px) rotate(-646deg); }
+}
+
+
+/* ACTUAL HERO FLOATERS FIX:
+   Floaters belong only around the big first-section mini-logo, never inside the navbar. */
+.nav-simple-logo-stage .tax-card,
+.brand-simple-cycle .tax-card,
+.site-header .tax-card {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Big hero mini-logo floater system: exactly 5 around the real hero logo */
+.hero-logo-stage {
+  position: relative !important;
+  width: min(520px, 100%) !important;
+  height: 520px !important;
+  min-height: 520px !important;
+  margin-inline: auto !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: visible !important;
+  isolation: isolate !important;
+}
+
+.hero-logo-stage .mini-logo {
+  position: relative !important;
+  z-index: 4 !important;
+}
+
+.hero-logo-stage .tax-card {
+  display: block !important;
+  visibility: visible !important;
+  opacity: .94 !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 6 !important;
+  white-space: nowrap !important;
+  pointer-events: none !important;
+  animation-timing-function: linear !important;
+  animation-iteration-count: infinite !important;
+}
+
+.hero-logo-stage .card-one {
+  animation: actualHeroOrbitOne 24s linear infinite !important;
+}
+
+.hero-logo-stage .card-two {
+  animation: actualHeroOrbitTwo 28s linear infinite !important;
+}
+
+.hero-logo-stage .card-three {
+  animation: actualHeroOrbitThree 32s linear infinite !important;
+}
+
+.hero-logo-stage .card-four {
+  animation: actualHeroOrbitFour 36s linear infinite !important;
+}
+
+.hero-logo-stage .card-five {
+  animation: actualHeroOrbitFive 40s linear infinite !important;
+}
+
+@keyframes actualHeroOrbitOne {
+  0%   { transform: translate(-50%, -50%) rotate(-20deg) translateX(225px) rotate(20deg); }
+  100% { transform: translate(-50%, -50%) rotate(340deg) translateX(225px) rotate(-340deg); }
+}
+
+@keyframes actualHeroOrbitTwo {
+  0%   { transform: translate(-50%, -50%) rotate(55deg) translateX(238px) rotate(-55deg); }
+  100% { transform: translate(-50%, -50%) rotate(415deg) translateX(238px) rotate(-415deg); }
+}
+
+@keyframes actualHeroOrbitThree {
+  0%   { transform: translate(-50%, -50%) rotate(132deg) translateX(230px) rotate(-132deg); }
+  100% { transform: translate(-50%, -50%) rotate(492deg) translateX(230px) rotate(-492deg); }
+}
+
+@keyframes actualHeroOrbitFour {
+  0%   { transform: translate(-50%, -50%) rotate(214deg) translateX(242px) rotate(-214deg); }
+  100% { transform: translate(-50%, -50%) rotate(574deg) translateX(242px) rotate(-574deg); }
+}
+
+@keyframes actualHeroOrbitFive {
+  0%   { transform: translate(-50%, -50%) rotate(292deg) translateX(232px) rotate(-292deg); }
+  100% { transform: translate(-50%, -50%) rotate(652deg) translateX(232px) rotate(-652deg); }
+}
+
+@media (max-width: 850px) {
+  .hero-logo-stage {
+    width: min(350px, 100%) !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    overflow: visible !important;
+  }
+
+  .hero-logo-stage .tax-card {
+    display: block !important;
+    visibility: visible !important;
+    opacity: .92 !important;
+    font-size: 11px !important;
+    padding: 7px 9px !important;
+    border-radius: 12px !important;
+  }
+
+  .hero-logo-stage .card-one {
+    animation: actualHeroOrbitOnePhone 24s linear infinite !important;
+  }
+
+  .hero-logo-stage .card-two {
+    animation: actualHeroOrbitTwoPhone 28s linear infinite !important;
+  }
+
+  .hero-logo-stage .card-three {
+    animation: actualHeroOrbitThreePhone 32s linear infinite !important;
+  }
+
+  .hero-logo-stage .card-four {
+    animation: actualHeroOrbitFourPhone 36s linear infinite !important;
+  }
+
+  .hero-logo-stage .card-five {
+    animation: actualHeroOrbitFivePhone 40s linear infinite !important;
+  }
+}
+
+@keyframes actualHeroOrbitOnePhone {
+  0%   { transform: translate(-50%, -50%) rotate(-20deg) translateX(130px) rotate(20deg); }
+  100% { transform: translate(-50%, -50%) rotate(340deg) translateX(130px) rotate(-340deg); }
+}
+
+@keyframes actualHeroOrbitTwoPhone {
+  0%   { transform: translate(-50%, -50%) rotate(55deg) translateX(143px) rotate(-55deg); }
+  100% { transform: translate(-50%, -50%) rotate(415deg) translateX(143px) rotate(-415deg); }
+}
+
+@keyframes actualHeroOrbitThreePhone {
+  0%   { transform: translate(-50%, -50%) rotate(132deg) translateX(134px) rotate(-132deg); }
+  100% { transform: translate(-50%, -50%) rotate(492deg) translateX(134px) rotate(-492deg); }
+}
+
+@keyframes actualHeroOrbitFourPhone {
+  0%   { transform: translate(-50%, -50%) rotate(214deg) translateX(147px) rotate(-214deg); }
+  100% { transform: translate(-50%, -50%) rotate(574deg) translateX(147px) rotate(-574deg); }
+}
+
+@keyframes actualHeroOrbitFivePhone {
+  0%   { transform: translate(-50%, -50%) rotate(292deg) translateX(138px) rotate(-292deg); }
+  100% { transform: translate(-50%, -50%) rotate(652deg) translateX(138px) rotate(-652deg); }
+}
+
+
+/* FINAL NAVBAR TIMING FIX:
+   No coexistence and no blank state.
+   Full logo is visible -> fades out -> mini-logo appears immediately and shakes ->
+   mini-logo disappears -> full logo appears immediately.
+*/
+.nav-simple-full {
+  animation: fudiciaNoOverlapFullLogo 19s ease-in-out infinite !important;
+}
+
+.nav-simple-mini {
+  animation: fudiciaNoOverlapMiniLogo 19s ease-in-out infinite !important;
+}
+
+/* Full logo:
+   0s-15s visible.
+   15s-15.8s fades out.
+   Hidden while mini-logo is shown.
+   Reappears exactly when mini-logo disappears. */
+@keyframes fudiciaNoOverlapFullLogo {
+  0%, 78.95% {
+    opacity: 1;
+  }
+
+  83.15% {
+    opacity: 0;
+  }
+
+  94.73% {
+    opacity: 0;
+  }
+
+  94.74%, 100% {
+    opacity: 1;
+  }
+}
+
+/* Mini-logo:
+   Hidden until full logo is completely gone.
+   Appears immediately, shakes once, stays for about 2s.
+   Disappears exactly when the full logo returns. */
+@keyframes fudiciaNoOverlapMiniLogo {
+  0%, 83.14% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+
+  83.15% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+
+  84.20% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(-5deg);
+  }
+
+  85.25% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(5deg);
+  }
+
+  86.30% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(-3deg);
+  }
+
+  87.35% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(3deg);
+  }
+
+  88.40%, 94.73% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+
+  94.74%, 100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+}
+
+
+/* FINAL PRECISE NAVBAR LOGO CYCLE
+   Works the same in dark mode and light mode.
+
+   Timeline:
+   0s - 15s: full logo visible
+   15s - 15.8s: full logo fades out
+   15.8s - 16.4s: mini-logo fades in
+   16.4s - 17.2s: mini-logo shakes once
+   17.2s - 20.2s: mini-logo stays still
+   20.2s - 20.8s: mini-logo fades out
+   20.8s - 21.4s: full logo fades in
+   repeat
+*/
+
+.brand-simple-cycle {
+  width: 185px !important;
+  min-width: 185px !important;
+  height: 54px !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.nav-simple-logo-stage {
+  position: relative !important;
+  display: block !important;
+  width: 185px !important;
+  height: 54px !important;
+  overflow: visible !important;
+}
+
+.nav-simple-full {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 185px !important;
+  height: 54px !important;
+  opacity: 1;
+  z-index: 2 !important;
+  animation: fudiciaPreciseFullLogoCycle 21.4s linear infinite !important;
+  will-change: opacity;
+}
+
+.nav-simple-full .logo {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  width: 185px !important;
+  height: auto !important;
+  transform: translateY(-50%) !important;
+  animation: none !important;
+  clip-path: none !important;
+}
+
+/* Make the dark/light logo selection explicit and stable */
+.nav-simple-full .logo-light,
+.nav-simple-mini-light {
+  display: none !important;
+}
+
+.nav-simple-full .logo-dark,
+.nav-simple-mini-dark {
+  display: block !important;
+}
+
+body.theme-light .nav-simple-full .logo-dark,
+body.theme-light .nav-simple-mini-dark {
+  display: none !important;
+}
+
+body.theme-light .nav-simple-full .logo-light,
+body.theme-light .nav-simple-mini-light {
+  display: block !important;
+}
+
+.nav-simple-mini {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  width: 40px !important;
+  height: auto !important;
+  opacity: 0;
+  z-index: 3 !important;
+  pointer-events: none !important;
+  transform-origin: center center !important;
+  animation: fudiciaPreciseMiniLogoCycle 21.4s linear infinite !important;
+  will-change: opacity, transform;
+}
+
+/* Disable all previous navbar animation systems so they cannot interfere */
+.nav-merge-stage,
+.nav-logo-stage,
+.nav-full-normal,
+.nav-text-reveal,
+.nav-full-mask,
+.nav-mini-logo {
+  animation: none !important;
+}
+
+.brand-simple-cycle .nav-merge-stage,
+.brand-simple-cycle .nav-logo-stage,
+.brand-simple-cycle .nav-full-normal,
+.brand-simple-cycle .nav-text-reveal,
+.brand-simple-cycle .nav-full-mask,
+.brand-simple-cycle .nav-mini-logo {
+  display: none !important;
+}
+
+/* Full logo:
+   Visible 15s, fades out, stays hidden through mini-logo phase,
+   fades in only after mini-logo has fully faded out. */
+@keyframes fudiciaPreciseFullLogoCycle {
+  0%, 70.09% {
+    opacity: 1;
+  }
+
+  73.83% {
+    opacity: 0;
+  }
+
+  97.20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Mini-logo:
+   Does not appear until the full logo fade-out is complete.
+   Fades in, shakes once, remains stationary for 3s,
+   fades out fully before full logo returns. */
+@keyframes fudiciaPreciseMiniLogoCycle {
+  0%, 73.83% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+
+  76.64% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+
+  77.57% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(-5deg);
+  }
+
+  78.50% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(5deg);
+  }
+
+  79.44% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(-3deg);
+  }
+
+  80.37% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(3deg);
+  }
+
+  81.31%, 94.39% {
+    opacity: 1;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+
+  97.20%, 100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(.94) rotate(0deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .brand-simple-cycle,
+  .nav-simple-logo-stage {
+    width: 168px !important;
+    min-width: 168px !important;
+    height: 50px !important;
+  }
+
+  .nav-simple-full {
+    width: 168px !important;
+    height: 50px !important;
+  }
+
+  .nav-simple-full .logo {
+    width: 168px !important;
+  }
+
+  .nav-simple-mini {
+    width: 37px !important;
+  }
+}
+
+
+/* HARD RESET FOR NAVBAR LOGO TIMER
+   When theme/language is clicked, JS briefly adds .nav-cycle-resetting.
+   This forces the navbar logo back to frame 0:
+   full logo visible, mini-logo hidden, countdown starts from 15 again. */
+.brand-simple-cycle.nav-cycle-resetting .nav-simple-full {
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+.brand-simple-cycle.nav-cycle-resetting .nav-simple-mini {
+  animation: none !important;
+  opacity: 0 !important;
+  transform: translateY(-50%) scale(.94) rotate(0deg) !important;
+}

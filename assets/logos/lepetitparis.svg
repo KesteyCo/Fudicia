@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <defs>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff2a2a"/>
+      <stop offset="100%" stop-color="#c40000"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="160" cy="100" rx="145" ry="78" fill="#d9d9d9"/>
+  <ellipse cx="160" cy="98" rx="138" ry="72" fill="url(#redGrad)"/>
+
+  <text x="70" y="88" font-family="Times New Roman, serif" font-size="28" fill="white">LE</text>
+  <text x="178" y="88" font-family="Times New Roman, serif" font-size="28" fill="white">PETIT</text>
+
+  <text x="70" y="140" font-family="Times New Roman, serif" font-size="58" fill="white">P</text>
+  <text x="122" y="140" font-family="Times New Roman, serif" font-size="72" fill="white">A</text>
+  <text x="182" y="140" font-family="Times New Roman, serif" font-size="58" fill="white">RIS</text>
+
+  <circle cx="132" cy="118" r="22" fill="#d40000" stroke="white" stroke-width="1"/>
+  <text x="132" y="115" text-anchor="middle" font-family="Arial" font-size="8" fill="white">DEPUIS</text>
+  <text x="132" y="126" text-anchor="middle" font-family="Arial" font-size="10" fill="white">1961</text>
+
+  <path d="M155 25 C170 5, 205 10, 215 35 C195 30,175 45,168 65 C162 52,158 40,155 25Z"
+        fill="white" stroke="#eeeeee" stroke-width="2"/>
+</svg>
